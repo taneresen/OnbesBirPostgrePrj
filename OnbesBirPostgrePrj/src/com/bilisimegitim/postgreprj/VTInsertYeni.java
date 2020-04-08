@@ -16,9 +16,9 @@ public class VTInsertYeni {
 			conn = VTBaglanti.baglantiAc();
 			String sorgu = "insert into ogrenci (no,ad,soyad) values(?,?,?)";
 			PreparedStatement ps = conn.prepareStatement(sorgu);
-			ps.setInt(1, 21);
-			ps.setString(2, "Atil");
-			ps.setString(3, "Karaca");
+			ps.setInt(1, 22);
+			ps.setString(2, "Atilla");
+			ps.setString(3, "Karacali");
 			int sonuc = ps.executeUpdate();
 			VTBaglanti.baglantiKapat(conn);
 			
